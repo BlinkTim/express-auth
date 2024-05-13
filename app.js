@@ -11,15 +11,13 @@ app.use(session({
     cookie: { secure: false }
 }));
 
-// Dummy-Datenbank im Speicher
 const bcrypt = require('bcrypt');
 
 const users = [
-    { id: 1, username: 'user1', password: bcrypt.hashSync('passwort123', 10) } // Passwort mit bcrypt gehasht
+    { id: 1, username: 'user1', password: bcrypt.hashSync('Dscole1905', 10) } 
 ];
 
 
-// Login Route
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
     const user = users.find(u => u.username === username);
@@ -31,7 +29,6 @@ app.post('/login', (req, res) => {
     }
 });
 
-// Logout Route
 app.post('/logout', (req, res) => {
     req.session.destroy();
     res.status(200).send('Logout erfolgreich');
