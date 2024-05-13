@@ -13,7 +13,7 @@ app.use(session({
 
 // Dummy-Datenbank im Speicher
 const users = [
-    { id: 1, username: 'Tim', password: '$2b$10$...' } // Passwort mit bcrypt gehasht
+    { id: 1, username: 'user1', password: bcrypt.hashSync('passwort123', 10) } // Passwort mit bcrypt gehasht
 ];
 
 const bcrypt = require('bcrypt');
