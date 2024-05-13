@@ -5,7 +5,7 @@ describe('Authentifizierungstests', () => {
     test('Erfolgreiches Login', async () => {
         const response = await request(app)
             .post('/login')
-            .send({ username: 'user1', password: 'passwort123' });
+            .send({ username: 'user1', password: 'Dscole1905' });
         expect(response.statusCode).toBe(200);
     });
 
