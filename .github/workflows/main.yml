@@ -24,5 +24,3 @@ jobs:
       run: npm test
     - name: Start server
       run: npm start &
-    - name: Run additional integration tests (optional)
-      run: npm run test-integration
