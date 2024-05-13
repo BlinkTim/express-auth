@@ -1,0 +1,20 @@
+{
+  "name": "express-auth",
+  "version": "1.0.0",
+  "description": "A simple Express.js authentication setup",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "keywords": ["express", "authentication", "nodejs"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
